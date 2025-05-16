@@ -86,11 +86,14 @@ int main() {
     printf("Nome da Cidade: %s\n", carta1.cidade);
     printf("População: %d\n", carta1.populacao);
     printf("Área: %.f km²\n", carta1.area);
+
+    //Identificação das casas milhões/bilhões.
     printf("PIB: %.2f %s de reais\n", 
         carta1.PIB >= 1000000000 ? carta1.PIB / 1000000000 : 
            (carta1.PIB >= 1000000 ? carta1.PIB / 1000000 : carta1.PIB),
            carta1.PIB >= 1000000000 ? "bilhões" : 
            (carta1.PIB >= 1000000 ? "milhões" : "reais"));
+
     printf("Pontos Turísticos: %d\n", carta1.pontosTuristicos);
     printf("PIB per Capta: %.2f reais\n", carta1.resultados.PIBperCapta);
     printf("Densidade Populacional: %.2f hab/km²\n", carta1.resultados.densidadePopulacional);
@@ -103,11 +106,14 @@ int main() {
     printf("Nome da Cidade: %s\n", carta2.cidade);
     printf("População: %d\n", carta2.populacao);
     printf("Área: %.2f km²\n", carta2.area);
+
+    //Identificação das casas milhões/bilhões.
     printf("PIB: %.2f %s de reais\n", 
         carta2.PIB >= 1000000000 ? carta2.PIB / 1000000000 : 
            (carta2.PIB >= 1000000 ? carta2.PIB / 1000000 : carta2.PIB),
            carta2.PIB >= 1000000000 ? "bilhões" : 
            (carta2.PIB >= 1000000 ? "milhões" : "reais"));
+    
     printf("Pontos Turísticos: %d\n", carta2.pontosTuristicos);
     printf("PIB per Capta: %.2f reais\n", carta2.resultados.PIBperCapta);
     printf("Densidade Populacional: %.2f hab/km²\n", carta2.resultados.densidadePopulacional);
